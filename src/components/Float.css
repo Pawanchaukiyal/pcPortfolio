@@ -1,0 +1,181 @@
+/* Floating Circle Styles */
+.floating-circle {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(192, 192, 192, 0.5); /* Transparent silver color */
+    border-radius: 50%; /* Makes the div a circle */
+    position: fixed; /* Keeps it on the left side of the screen */
+    left: 20px; /* Moves the circle 20px from the left edge */
+    top: 320px; /* Moves the circle 320px from the top of the viewport */
+    animation: float 3s ease-in-out infinite, shine 2s linear infinite; /* Restored float animation */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1001; /* Ensure the circle is above other content */
+}
+
+/* Floating animation for the circle */
+@keyframes float {
+    0% {
+        transform: translateY(0); /* Start at the original position */
+    }
+    50% {
+        transform: translateY(-20px); /* Move up by 20px */
+    }
+    100% {
+        transform: translateY(0); /* Return to the original position */
+    }
+}
+
+/* Menu Box Styles */
+.menu-box {
+    display: none; /* Initially hidden */
+    position: relative; /* Position relative to the floating circle */
+    top: 0; /* Aligns with the top of the circle */
+    left: 112px; /* Moves the menu box to the right of the circle */
+    max-width: 200px; /* Adjusted for larger screens */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 4px;
+    padding-right: 30px;
+    z-index: 1000; /* Ensure the menu box is above other content */
+}
+
+/* Show the menu when the 'show' class is added */
+.menu-box.show {
+    display: block; /* Show when the 'show' class is present */
+}
+
+/* Show the menu when hovering over the floating circle */
+.floating-circle:hover .menu-box {
+    display: block; /* Show on hover */
+}
+
+/* Add the triangle pointing towards the circle */
+.menu-box::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    top: 50%;
+    right: 0; /* Move the triangle outside the box */
+    transform: translateY(-50%);
+    border-width: 18px; /* Increase size of the triangle */
+    border-style: solid;
+    border-color: transparent grey transparent transparent; /* Triangle color */
+    margin: 2px;
+}
+
+/* Add a small bright yellow ball inside the triangle */
+.menu-box::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    right: 4px; /* Position inside the triangle */
+    width: 12px; /* Size of the ball */
+    height: 12px; /* Size of the ball */
+    background-color: yellow; /* Bright yellow color */
+    border-radius: 20%; /* Makes the div a ball */
+    transform: translateY(-50%); /* Center the ball vertically */
+    animation: vivo 3s ease-in-out infinite;
+}
+
+/* Floating animation for the ball */
+@keyframes vivo {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-22px); /* Float up */
+    }
+    100% {
+        transform: translateY(0); /* Float down */
+    }
+}
+
+/* Styles for the menu items */
+.menu-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-box li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    color: white; /* Adjust text color to ensure it is visible against the black background */
+}
+
+.menu-box li:hover {
+    background-color: #333; /* Slightly lighter color for hover effect */
+}
+
+.menu-box li svg {
+    margin-right: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Smaller circle and menu box for tablets and smaller screens */
+    .floating-circle {
+        width: 50px;
+        height: 50px;
+        left: 10px; /* Adjust position for smaller screens */
+        top: 260px; /* Adjust position for smaller screens */
+    }
+
+    .menu-box {
+        left: 60px; /* Move menu box closer for smaller screens */
+        max-width: 150px; /* Reduce max-width for smaller screens */
+    }
+
+    .menu-box::after {
+        height: 80px; /* Adjust triangle size */
+        border-width: 14px; /* Adjust triangle border width */
+    }
+
+    .menu-box::before {
+        width: 10px; /* Adjust ball size */
+        height: 10px; /* Adjust ball size */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Even smaller circle and menu box for mobile devices */
+    .floating-circle {
+        width: 40px;
+        height: 40px;
+        left: 5px; /* Adjust position for mobile screens */
+        top: 200px; /* Adjust position for mobile screens */
+    }
+
+    .menu-box {
+        left: 90px; /* Move menu box closer for mobile screens */
+        max-width: 120px; /* Further reduce max-width for mobile screens */
+        
+    }
+
+    .menu-box::after {
+        height: 60px; /* Adjust triangle size */
+        border-width: 10px; /* Adjust triangle border width */
+    }
+
+    .menu-box::before {
+        width: 8px; /* Adjust ball size */
+        height: 8px; /* Adjust ball size */
+    }
+
+    .menu-box li {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+
+    .menu-box li svg {
+        margin-right: 8px; /* Adjust icon margin */
+    }
+}

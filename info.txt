@@ -1,0 +1,19 @@
+// Packages info:
+
+emailjs/browser -- EmailJS helps you send emails directly from code with one command. No server is required – just connect EmailJS to one of the supported email services, create an email template, and use our SDK to trigger an email.
+
+react-three/drei -- 
+
+react-three/fiber -- it allow three js code in react fashion
+
+framer-motion
+
+maath --- math function
+
+react-router-dom
+
+react-tilt
+
+react-vertical-timeline-component
+
+three
