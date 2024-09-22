@@ -32,3 +32,53 @@
     transform: rotate(0deg);
   }
 }
+
+
+/* Button container styling for responsiveness and spacing */
+.btn_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: absolute; /* Make it absolute for better positioning */
+  left: 0; /* Center it horizontally */
+  right: 0; /* Center it horizontally */
+  bottom: 5rem; /* Default bottom position */
+  z-index: 10; /* Ensure it appears above other elements */
+}
+
+/* Adjusting spacing for different screen sizes */
+@media (max-width: 640px) {
+  .btn_div {
+    bottom: 23rem; /* Adjust bottom position for small screens */
+  }
+}
+
+@media (min-width: 640px) {
+  .btn_div {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    bottom: 15rem; /* Adjust for larger screens */
+  }
+}
+
+/* Scroll down indicator styling for responsiveness */
+.move_div {
+  position: absolute; /* Make it absolute for better positioning */
+  left: 0; /* Center it horizontally */
+  right: 0; /* Center it horizontally */
+  bottom: 4rem; /* Default bottom position */
+}
+
+@media (max-width: 640px) {
+  .move_div {
+    bottom: 13rem; /* Adjust bottom position for small screens */
+  }
+}
+
+@media (min-width: 640px) {
+  .move_div {
+    bottom: 8rem; /* Adjust for larger screens */
+  }
+}

@@ -1,181 +1,24 @@
-/* General Styles */
-.main_head {
-  display: flex;
-  align-items: center;
-  margin: 1rem;
-  flex-direction: column; /* Stack vertically on small screens */
+/* Circle Logo Hover Effect */
+.logo-container {
+  transition: transform 0.5s;
+  margin: 20px; ;
 }
 
-.first_div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 6rem;
-  width: 6rem;
-  border-width: 2px;
-  font-size: 2rem;
+.logo-container:hover .rotate-text {
+  animation: spinText 2s linear;
 }
 
-.first_div .text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+/* Circle Logo Spin Animation */
+.hover\:animate-spin-logo:hover {
+  animation: spin 2s linear;
 }
 
-/* Expand div styles */
-.expand_div {
-  display: none; /* Hidden by default */
-  position: absolute;
-  top: 0; /* Aligns with the top of the circle */
-  left: 100%; /* Position next to the circle */
-  transform: translateX(10px); /* Space between the circle and text */
-  white-space: nowrap; /* Prevent text wrapping */
-  overflow: hidden;
-  background-color: lightyellow;
-  border: 1px solid yellow;
-  padding: 0.5rem; /* Padding inside the expand div */
-}
-
-.expand_div span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-
-/* Responsive Styles */
-@media (min-width: 768px) {
-  .main_head {
-    flex-direction: row; /* Stack horizontally on medium screens and up */
-  }
-
-  .first_div {
-    height: 8rem;
-    width: 8rem;
-    font-size: 3rem;
-    border-width: 4px;
-  }
-
-  .expand_div {
-    width: 25rem; /* Adjust width for medium screens */
-    height: 5rem; /* Adjust height for medium screens */
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s ease, width 0.5s, height 0.5s;
-  }
-
-  .first_div:hover + .expand_div {
-    visibility: visible;
-    opacity: 1;
-    width: 30rem;
-    height: 6rem;
-    display: flex;
-  }
-}
-
-@media (min-width: 1024px) {
-  .first_div {
-    height: 8rem;
-    width: 8rem;
-    font-size: 3rem;
-    border-width: 4px;
-  }
-
-  .expand_div {
-    width: 35rem; /* Adjust width for larger screens */
-    height: 6rem; /* Adjust height for larger screens */
-  }
-}
-
-@media (max-width: 768px) {
-  .first_div {
-    height: 5rem;
-    width: 5rem;
-    font-size: 1.5rem;
-    border-width: 2px;
-  }
-
-  .expand_div {
-    width: 15rem; /* Adjust width for smaller screens */
-    height: 4rem; /* Adjust height for smaller screens */
-    left: 6rem; /* Adjust position for smaller screens */
-    transform: translateX(5px); /* Adjust space between the circle and text */
-  }
-}
-
-@media (max-width: 480px) {
-  .first_div {
-    height: 4rem;
-    width: 4rem;
-    font-size: 1rem;
-    border-width: 1px;
-  }
-
-  .expand_div {
-    width: 12rem; /* Further reduce width for mobile screens */
-    height: 3rem; /* Further reduce height for mobile screens */
-    left: 5rem; /* Adjust position for mobile screens */
-    transform: translateX(5px); /* Adjust space between the circle and text */
-  }
-
-  .expand_div span {
-    font-size: 0.8rem; /* Adjust font size for mobile screens */
-  }
-}
-
-/* Hover and Animation Styles */
-.first_div:hover span {
-  display: inline-block; /* Allow rotation on inline elements */
-  animation: rotateText 2s linear;
-  color: yellow;
-}
-
-@keyframes rotateText {
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
-  }
-}
-
-.expand_div span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  white-space: normal; /* Allow text to wrap to the next line */
-}
-
-.word {
-  opacity: 0;
-  animation: showText 3s forwards;
-}
-
-.word:nth-child(1) {
-  animation-delay: 0.3s;
-}
-
-.word:nth-child(2) {
-  animation-delay: 0.6s;
-}
-
-.word:nth-child(3) {
-  animation-delay: 0.9s;
-}
-
-.word:nth-child(4) {
-  animation-delay: 1.2s;
-}
-
-.word:nth-child(5) {
-  animation-delay: 1.5s;
-}
-
-@keyframes showText {
-  to {
-    opacity: 1;
   }
 }
