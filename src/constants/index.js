@@ -15,13 +15,13 @@ import {
   git,
   figma,
   docker,
+  fitmaker,
+  namo,
   meta,
   starbucks,
   tesla,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
+  doc,
   threejs,
   express
 } from "../assets";
@@ -203,9 +203,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Fit_Maker",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Fitmaker is an innovative web platform that promises to improve user fitness and health through personalized experiences. ",
     tags: [
       {
         name: "react",
@@ -220,50 +220,50 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: fitmaker,
+    source_code_link: "https://fit-make-front-face.vercel.app/",
   },
   {
-    name: "Job IT",
+    name: "NamoCommerce",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Created an e-commerce web app utilizing React, Node.js, and Firebase to ensure an efficient, scalable, and real-time application... ",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Node",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: namo,
+    source_code_link: "https://namo-ecommerc.vercel.app/",
   },
   {
-    name: "Trip Guide",
+    name: "Doc_Pointment",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
       {
-        name: "nextjs",
+        name: "viteReact",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "tailwind",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "mongodb",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: doc,
+    source_code_link: "https://github.com/Pawanchaukiyal/DocAppoint",
   },
 ];
 
