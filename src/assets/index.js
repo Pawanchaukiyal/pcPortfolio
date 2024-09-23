@@ -31,6 +31,11 @@ import fitmaker from "./FitMaker.png";
 import namo from "./Namo.png";
 import doc from "./doc.png";
 
+import rohit from "./rohit.png";
+import vivek from "./vivek.png";
+import deepu from "./deepu.png";
+
+
 export {
   logo,
   backend,
@@ -61,4 +66,7 @@ export {
   express,
   fitmaker,
   namo,
+  rohit,
+  vivek,
+  deepu
 };
