@@ -31,20 +31,6 @@ import {
   drdo
 } from "../assets";
 
-export const navLinks = [
-  {
-    id: "about",
-    title: "About",
-  },
-  {
-    id: "work",
-    title: "Work",
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
-];
 
 const services = [
   {
@@ -275,7 +261,7 @@ const projects = [
 
 // work Experiences
 
- const workExperiencesdata = [
+const workExperiencesdata = [
   {
     id: 1,
     name: 'Devtown',

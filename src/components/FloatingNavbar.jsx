@@ -4,25 +4,23 @@ import { IoShareSocialSharp } from "react-icons/io5";
 import { GiClockwork } from "react-icons/gi";
 import { MdWorkOutline } from "react-icons/md";
 import './Float.css';
+import { handleShare } from '../constants/HandleShare';
 
 const FloatingNavbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   let hideMenuTimeout = null;
 
   const handleMouseEnter = () => {
-    // Clear any timeout to hide the menu
     clearTimeout(hideMenuTimeout);
-    setShowMenu(true); // Show the menu immediately
+    setShowMenu(true);
   };
 
   const handleMouseLeave = () => {
-    // Set a timeout to hide the menu after 10 seconds
     hideMenuTimeout = setTimeout(() => {
       setShowMenu(false);
-    }, 100); // 10 seconds (10,000 milliseconds)
+    }, 100);
   };
 
-  // Clear the timeout when the component unmounts
   useEffect(() => {
     return () => clearTimeout(hideMenuTimeout);
   }, []);
@@ -35,12 +33,13 @@ const FloatingNavbar = () => {
     >
       <div className={`menu-box ${showMenu ? 'show' : ''}`}>
         <ul>
-          <li><FaHome /> Home</li>
-          <li><FaInfoCircle /> About</li>
-          <li><FaPhoneAlt /> Contact</li>
-          <li><MdWorkOutline /> Work</li>
-          <li><GiClockwork /> Plans</li>
-          <li><IoShareSocialSharp /> Share</li>
+          <li><FaHome /><a href="#hero"> Home</a></li>
+          <li><FaInfoCircle /><a href="#about"> About</a></li>
+          <li><FaPhoneAlt /><a href="#contact"> Contact</a></li>
+          <li><MdWorkOutline /><a href="#work-experience"> Work</a></li>
+          <li><GiClockwork /><a href="#plans"> Plans</a></li>
+          {/* Uncomment if needed */}
+          <li><IoShareSocialSharp /><a href="#share" onClick={handleShare}> Share</a></li>
         </ul>
       </div>
     </div>

@@ -32,7 +32,7 @@ const Hero = () => {
 
         {/* Button */}
         <div className="btn_div absolute  left-0 right-0 flex justify-center z-10">
-          <a href="#about" className="w-fit">
+          <a href="#contact" className="w-fit">
             <Button name="Let's work together" isBeam containerClass="sm:w-fit md:min-w-96" />
           </a>
         </div>
