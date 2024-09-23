@@ -28,7 +28,8 @@ import {
   vivek,
   rohit,
   devtown,
-  drdo
+  drdo,
+  blender
 } from "../assets";
 
 
@@ -112,42 +113,94 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "HTML5",
+    // company_name: "Starbucks",
+    icon: html,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "March 2022 - April 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Creating and maintaining web pages using semantic HTML for better accessibility and SEO.",
+      "Ensuring cross-browser compatibility and optimizing pages for performance.",
+      "Collaborating with designers to implement responsive layouts.",
+      "Validating HTML markup and following best practices for clean, maintainable code.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "CSS Developer",
+    // company_name: "Tesla",
+    icon: css,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "May 2021 - Aug 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designing and implementing visually appealing layouts using CSS and preprocessors like SASS.",
+      "Ensuring website responsiveness and accessibility across various devices.",
+      "Optimizing CSS for performance and maintainability.",
+      "Creating and maintaining style guides and documentation for design consistency.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "JavaScript",
+    // company_name: "Shopify",
+    icon: javascript,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Sep 2022 - Jan 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Building interactive web applications using JavaScript frameworks and libraries.",
+      "Utilizing ES6 features to enhance code readability and maintainability.",
+      "Implementing AJAX requests for asynchronous data fetching and dynamic content updates.",
+      "Debugging and optimizing JavaScript code for performance improvements.",
+    ],
+  },
+  {
+    title: "React.js Developer",
+    // company_name: "Starbucks",
+    icon: reactjs,
+    iconBg: "#383E56",
+    date: "Feb 2023 - April 2023",
+    points: [
+      "Developing and maintaining web applications using React.js and related technologies.",
+      "Collaborating with cross-functional teams to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Participating in code reviews and providing constructive feedback.",
+    ],
+  },
+  {
+    title: "Node.js Developer",
+    company_name: "Backend Solutions",
+    icon: nodejs,
+    iconBg: "#68A063",
+    date: "May 2023 - June 2023",
+    points: [
+      "Building scalable server-side applications using Node.js and Express.",
+      "Integrating third-party APIs and managing asynchronous operations.",
+      "Implementing RESTful APIs for efficient data exchange between client and server.",
+      "Participating in code reviews and ensuring best practices in backend development.",
+    ],
+  },
+  {
+    title: "Express.js Developer",
+    // company_name: "Tech Enterprises",
+    icon: express,
+    iconBg: "#404D59",
+    date: "June 2023 - June 2023",
+    points: [
+      "Developing and maintaining server-side applications using Express.js.",
+      "Creating middleware for request processing and response handling.",
+      "Implementing authentication and authorization for secure data access.",
+      "Collaborating with frontend developers to ensure seamless integration.",
+    ],
+  },
+  {
+    title: "MongoDB Developer",
+    // company_name: "Data Solutions",
+    icon: mongodb,
+    iconBg: "#47A248",
+    date: "July 2023 - Sep2023",
+    points: [
+      "Designing and managing NoSQL databases using MongoDB.",
+      "Implementing data models and optimizing database performance.",
+      "Collaborating with backend developers to ensure efficient data storage and retrieval.",
+      "Participating in database migrations and maintaining data integrity.",
     ],
   },
   {
@@ -155,7 +208,7 @@ const experiences = [
     company_name: "Meta",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Sep 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -163,6 +216,33 @@ const experiences = [
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
+  {
+    title: "Blender Artist",
+    // company_name: "Creative Studio",
+    icon: blender,
+    iconBg: "#F5792A",
+    date: "Aug 2024 - Present",
+    points: [
+      "Creating 3D models and animations using Blender for various projects.",
+      "Collaborating with designers to develop visual assets for games and applications.",
+      "Implementing realistic textures and lighting for enhanced visual fidelity.",
+      "Optimizing 3D assets for performance and compatibility across platforms.",
+    ],
+  },
+  {
+    title: "Three.js Developer",
+    // company_name: "Interactive Media",
+    icon: threejs,
+    iconBg: "#FFFFFF",
+    date: "Jan 2024 - Present",
+    points: [
+      "Building interactive 3D applications and visualizations using Three.js.",
+      "Integrating 3D models and animations into web applications.",
+      "Optimizing performance for smooth rendering and interactivity.",
+      "Collaborating with designers to create immersive user experiences.",
+    ],
+  },
+
 ];
 
 const testimonials = [
