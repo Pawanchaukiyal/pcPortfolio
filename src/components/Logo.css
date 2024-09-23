@@ -24,6 +24,27 @@
 }
 
 
+
+/* Circle Logo Hover Effect */
+.logo-container {
+  transition: transform 0.5s;
+  margin: 20px;
+}
+
+/* Circle Logo Spin Animation */
+.hover\:animate-spin-logo:hover {
+  animation: spin 2s linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* Hover Text Styling */
 .hover-text {
   font-size: 1rem; /* Default for small screens */

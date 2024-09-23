@@ -12,7 +12,7 @@ const Logo = () => {
     if (isHovered) {
       timer = setInterval(() => {
         setCurrentTextIndex(prevIndex => (prevIndex + 1) % texts.length);
-      }, 3000); // Change text every 3 seconds
+      }, 2000); // Change text every 2 seconds
     } else {
       setCurrentTextIndex(0); // Reset index when not hovered
     }
@@ -31,19 +31,19 @@ const Logo = () => {
 
   return (
     <div className="main_head flex items-center" onMouseEnter={handleHover} onMouseLeave={handleMouseLeave}>
-      {/* Circle Logo */}
-      <div
+       {/* Circle Logo */}
+       <div
         className="logo-container relative w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-slate-400 cursor-pointer border-4 border-y-black-100 flex items-center justify-center hover:animate-spin-logo"
       >
         <span className="rotate-text text-3xl font-bold tracking-wider text-purple-900">PC</span>
       </div>
 
       {/* Text Display */}
-      {isHovered && (
-        <div className="hover-texts flex flex-col ml-4">
+      <div className="hover-texts flex flex-col ml-4">
+        {isHovered && (
           <span className="hover-text font-bold">{texts[currentTextIndex]}</span>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };
