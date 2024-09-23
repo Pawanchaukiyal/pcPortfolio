@@ -33,12 +33,20 @@
   background-clip: padding-box; /* Added for compatibility */
 }
 
-.green-pink-gradient {
+/* .green-pink-gradient {
   background: "#00cea8";
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background-clip: padding-box; 
+} */
+
+.green-pink-gradient {
+  background: #00cea8;
   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
   background-clip: padding-box; /* Added for compatibility */
 }
+
 
 .orange-text-gradient {
   background: #f12711; /* fallback for old browsers */
@@ -173,15 +181,50 @@
 }
 
 
-  /* button component */
-  /* .btn {
-    @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-blackg-300  transition-all active:scale-95 text-white mx-auto;
+
+
+@layer utilities {
+  .c-space {
+    @apply sm:px-10 px-5;
   }
 
-  .btn-ping {
-    @apply animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75;
+    .text-gray_gradient {
+    @apply bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent;
   }
 
-  .btn-ping_dot {
-    @apply relative inline-flex rounded-full h-3 w-3 bg-green-500;
-  } */
+  .head-text {
+    @apply sm:text-4xl text-3xl font-semibold text-gray_gradient;
+  }
+
+
+
+
+   /*  work experience section */
+   .work-container {
+    @apply grid lg:grid-cols-3 grid-cols-1 gap-5 mt-12;
+  }
+
+  .work-canvas {
+    @apply col-span-1 rounded-lg bg-black-200 border border-black-300;
+  }
+
+  .work-content {
+    @apply col-span-2 rounded-lg bg-black-200 border border-black-300;
+  }
+
+  .work-content_container {
+    @apply grid grid-cols-[auto_1fr] items-start gap-5  transition-all ease-in-out duration-500 cursor-pointer hover:bg-gray-800 rounded-lg sm:px-5 px-2.5;
+  }
+
+  .work-content_logo {
+    @apply rounded-3xl w-16 h-16 p-2 bg-black-600;
+  }
+
+  .work-content_bar {
+    @apply flex-1 w-0.5 mt-4 h-full bg-black-300 group-hover:bg-black-500 group-last:hidden;
+  }
+ 
+
+}
+
+  

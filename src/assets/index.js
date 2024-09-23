@@ -27,6 +27,9 @@ import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 
+import devtown from "./company/devtown.png";
+import drdo from "./company/drdo.svg";
+
 import fitmaker from "./FitMaker.png";
 import namo from "./Namo.png";
 import doc from "./doc.png";
@@ -68,5 +71,8 @@ export {
   namo,
   rohit,
   vivek,
-  deepu
+  deepu,
+
+  drdo,
+  devtown
 };

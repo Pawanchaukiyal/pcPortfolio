@@ -26,7 +26,9 @@ import {
   express,
   deepu,
   vivek,
-  rohit
+  rohit,
+  devtown,
+  drdo
 } from "../assets";
 
 export const navLinks = [
@@ -270,4 +272,37 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+
+// work Experiences
+
+ const workExperiencesdata = [
+  {
+    id: 1,
+    name: 'Devtown',
+    pos: 'Front End Developer',
+    duration: '2023',
+    title: "Improved web application user engagement and performance through strategic implementation of interactive features, responsive design, and backend optimization. Collaborated effectively with design and development teams to deliver a superior user experience and drive significant growth in mobile traffic. Demonstrated technical proficiency in Node.js, MongoDB, and code review while contributing to the maintenance and update of a large-scale e-commerce platform.",
+    icon: devtown,
+    animation: 'victory',
+  },
+  {
+    id: 2,
+    name: 'Drdo',
+    pos: 'IOT Eng.',
+    duration: '2019',
+    title: "Worked on IoT and electronics projects at DRDO. Contributed to the development of innovative solutions leveraging Internet of Things technology. Demonstrated expertise in electronics engineering and applied knowledge to real-world applications.",
+    icon: drdo,
+    animation: 'salute',
+  },
+  // {
+  //   id: 3,
+  //   name: 'Notion',
+  //   pos: 'Junior Web Developer',
+  //   duration: '2019 - 2020',
+  //   title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
+  //   icon: '/assets/notion.svg',
+  //   animation: 'salute',
+  // },
+];
+
+export { services, technologies, experiences, testimonials, projects, workExperiencesdata};

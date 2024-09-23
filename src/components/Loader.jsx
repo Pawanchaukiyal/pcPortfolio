@@ -1,7 +1,12 @@
 import { Html, useProgress } from "@react-three/drei";
+import { useMemo } from "react";
 
 const CanvasLoader = () => {
   const { progress } = useProgress();
+  
+  // Memoize progress to reduce unnecessary re-renders
+  const displayProgress = useMemo(() => progress.toFixed(2), [progress]);
+
   return (
     <Html
       as='div'
@@ -22,7 +27,7 @@ const CanvasLoader = () => {
           marginTop: 40,
         }}
       >
-        {progress.toFixed(2)}%
+        {displayProgress}%
       </p>
     </Html>
   );
