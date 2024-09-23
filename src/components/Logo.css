@@ -22,3 +22,25 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Hover Text Styling */
+.hover-text {
+  font-size: 1rem; /* Default for small screens */
+  color: white;
+  transition: color 0.3s ease;
+}
+
+/* Responsive text adjustments */
+@media (min-width: 640px) {
+  .hover-text {
+    font-size: 1.25rem; /* Larger text for medium screens */
+  }
+}
+
+/* Make sure to handle layout and behavior on small screens */
+@media (max-width: 450px) {
+  .hover-text {
+    font-size: 0.875rem; /* Slightly smaller text for extra-small screens */
+  }
+}
