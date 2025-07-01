@@ -3,8 +3,8 @@ import React from 'react';
 const ResumeButton = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/PcResNp5.0.pdf'; // Your resume file path
-    window.open('/PcResNp5.0.pdf', '_blank'); // Open in a new tab
+    link.href = '/Resume.pdf'; // Your resume file path
+    window.open('/Resume.0.pdf', '_blank'); // Open in a new tab
     link.download = 'Pawan_Chaukiyal_Resume.pdf'; // Desired filename
     link.click();
   };

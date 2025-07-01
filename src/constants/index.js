@@ -29,7 +29,9 @@ import {
   rohit,
   devtown,
   drdo,
-  blender
+  blender,
+  att,
+  filefolio
 } from "../assets";
 
 
@@ -274,6 +276,27 @@ const testimonials = [
 
 const projects = [
   {
+    name: "FileFolio",
+    description:
+      "FileFolio is a full-stack portfolio platform with secure file uploads, user authentication, and an admin panel, built using React.js, Node.js, MongoDB, and Cloudinary.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: filefolio,
+    source_code_link: "https://fileportfolio.vercel.app",
+  },
+  {
     name: "Fit_Maker",
     description:
       "Fitmaker is an innovative web platform that promises to improve user fitness and health through personalized experiences. ",
@@ -342,8 +365,17 @@ const projects = [
 // work Experiences
 
 const workExperiencesdata = [
-  {
+    {
     id: 1,
+    name: 'Attitude Eductech Pvt. Ltd.',
+    pos: 'FSD Developer',
+    duration: '2024',
+    title: "Full Stack Developer with hands-on experience building and deploying web and mobile applications using React.js, Next.js, Node.js, MongoDB, and React Native. Contributed to secure, scalable systems, mentored junior developers, and improved frontend performance through modern optimization techniques. Continuously expanding skills in DevOps and UI/UX to build better user experiences.",
+    icon: att,
+    animation: 'salute',
+  },
+  {
+    id: 2,
     name: 'Devtown',
     pos: 'Front End Developer',
     duration: '2023',
@@ -352,7 +384,7 @@ const workExperiencesdata = [
     animation: 'victory',
   },
   {
-    id: 2,
+    id: 3,
     name: 'Drdo',
     pos: 'IOT Eng.',
     duration: '2019',
@@ -360,15 +392,7 @@ const workExperiencesdata = [
     icon: drdo,
     animation: 'salute',
   },
-  // {
-  //   id: 3,
-  //   name: 'Notion',
-  //   pos: 'Junior Web Developer',
-  //   duration: '2019 - 2020',
-  //   title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-  //   icon: '/assets/notion.svg',
-  //   animation: 'salute',
-  // },
+
 ];
 
 export { services, technologies, experiences, testimonials, projects, workExperiencesdata};

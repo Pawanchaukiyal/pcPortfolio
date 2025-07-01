@@ -34,11 +34,11 @@ import drdo from "./company/drdo.svg";
 import fitmaker from "./FitMaker.png";
 import namo from "./Namo.png";
 import doc from "./doc.png";
-
+import filefolio from "./filefolio.png"
 import rohit from "./rohit.png";
 import vivek from "./vivek.png";
 import deepu from "./deepu.png";
-
+import att from "./company/att.png"
 
 export {
   logo,
@@ -69,7 +69,7 @@ export {
   doc,
   express,
   blender,
-
+  att,
 
   fitmaker,
   namo,
@@ -78,5 +78,6 @@ export {
   deepu,
 
   drdo,
-  devtown
+  devtown,
+  filefolio
 };
